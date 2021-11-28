@@ -20,8 +20,8 @@ module.exports = {
     '@typescript-eslint',
   ],
   'rules': {
-    'indent': ['error', 2],
-    'object-curly-spacing': 'always',
-    'array-bracket-spacing': 'always'
+    'indent': [ 'error', 2 ],
+    'object-curly-spacing': [ 'error', 'always' ],
+    'array-bracket-spacing': [ 'error', 'always' ],
   },
 };
