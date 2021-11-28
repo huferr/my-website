@@ -1,5 +1,5 @@
 import React from 'react';
-import {Home} from './pages/Home/Home.component';
+import { Home } from './pages/Home/Home.component';
 import { Portfolio } from './pages/Portfolio/Portfolio.component';
 import { GlobalStyles } from './styles/GlobalStyles';
 
@@ -8,7 +8,7 @@ const App: React.FC = function() {
     <>
       <GlobalStyles />
       <Home />
-      <Portfolio /> 
+      <Portfolio />
     </>
   );
 };
