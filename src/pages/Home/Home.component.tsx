@@ -1,13 +1,9 @@
 import React, { useState } from "react";
-import { Container, Content, Title, Bold, Subtitle, ButtonsContainer, Button, ArrowBox } from "./Home.styles";
+import { Arrow } from "../../assets/arrow";
+import { Container, Content, Title, Bold, Subtitle, ButtonsContainer, Button, BouncyDiv } from "./Home.styles";
+
 
 export const Home: React.FC = () => {
-    const [opacity, setOpacity] = useState(0);
-    
-    setInterval(() => {
-      setOpacity(opacity === 1 ? 0 : 1)
-      console.log(opacity)
-    }, 1500)
     
       return (
         <Container>
@@ -23,10 +19,11 @@ export const Home: React.FC = () => {
                 <Button href="https://www.linkedin.com/in/hugo-ferreira-it/" target="_blank">LinkedIn</Button>
                 <Button>Portfolio</Button>
               </ButtonsContainer>
-              <ArrowBox opacity={opacity}>
-                {/* <Arrow /> */}
-              </ArrowBox>
+              
           </Content>
+          <BouncyDiv>
+                <Arrow />
+              </BouncyDiv>
         </Container>
       )
     }

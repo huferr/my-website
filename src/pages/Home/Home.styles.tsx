@@ -1,12 +1,12 @@
-import styled from "styled-components";
+import styled, { keyframes } from 'styled-components';
+import { bounce } from 'react-animations';
 
-interface GradientProp {
-    gradient?: number;
-}
+const bounceAnimation = keyframes`${bounce}`;
 
-interface ArrowProps {
-    opacity?: number;
-}
+export const BouncyDiv = styled.div`
+  animation: infinite 2s ${bounceAnimation};
+  margin-top: 20px;
+`;
 
 export const Container = styled.div`
   width: 100vw;
@@ -34,7 +34,7 @@ export const Title = styled.h1`
   color: #fff;
 `;
 
-export const Bold = styled.strong<GradientProp>`
+export const Bold = styled.strong`
   background: linear-gradient(50deg, #53cadf, #fff385, #ff66b0);
   background-clip: text  !important;
   -webkit-background-clip: text !important;
@@ -71,8 +71,4 @@ export const Button = styled.a`
   border: none;
   border-radius: 4px;
   cursor: pointer;
-`;
-
-export const ArrowBox = styled.div<ArrowProps>`
-  opacity: ${props => props.opacity};
 `;
