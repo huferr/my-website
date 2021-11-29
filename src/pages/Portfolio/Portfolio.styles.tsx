@@ -64,7 +64,7 @@ export const Button = styled.a`
 `;
 
 export const CarouselWrapper = styled.div`
-margin-top: 20px;
+  margin-top: 20px;
 `;
 
 export const Project = styled.div`

@@ -12,7 +12,7 @@ import {
   BouncyDiv,
 } from './Home.styles';
 
-export const Home: React.FC = function() {
+export const Home: React.FC = () => {
   return (
     <Container>
       <Content>

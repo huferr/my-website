@@ -73,4 +73,9 @@ export const Button = styled.a`
   border: none;
   border-radius: 4px;
   cursor: pointer;
+
+  :hover {
+    background-color: #dfdede;
+    transition: all 0.3s;
+  }
 `;
