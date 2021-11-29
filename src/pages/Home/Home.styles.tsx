@@ -6,6 +6,7 @@ const bounceAnimation = keyframes`${bounce}`;
 export const BouncyDiv = styled.div`
   animation: infinite 2s ${bounceAnimation};
   margin-top: 20px;
+  cursor: pointer;
 `;
 
 export const Container = styled.div`

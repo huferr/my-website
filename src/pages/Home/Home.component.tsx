@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowDown } from '../../assets/icons/arrow-down';
+import { Link } from 'react-scroll';
 import {
   Container,
   Content,
@@ -29,12 +30,25 @@ export const Home: React.FC = function() {
         <ButtonsContainer>
           <Button href="https://github.com/huferr" target="_blank">Github</Button>
           <Button href="https://www.linkedin.com/in/hugo-ferreira-it/" target="_blank">LinkedIn</Button>
-          <Button>Portfolio</Button>
+
+          <Link to="Portfolio"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            <Button>Portfolio</Button>
+          </Link>
         </ButtonsContainer>
       </Content>
-      <BouncyDiv>
-        <ArrowDown />
-      </BouncyDiv>
+      <Link to="Portfolio"
+        spy={true}
+        smooth={true}
+        duration={500}
+      >
+        <BouncyDiv>
+          <ArrowDown />
+        </BouncyDiv>
+      </Link>
     </Container>
   );
 };

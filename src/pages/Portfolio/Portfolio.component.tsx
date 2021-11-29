@@ -14,11 +14,12 @@ import {
   ProjectPlatform,
   CarouselWrapper,
 } from './Portfolio.styles';
+import { PortfolioProps } from './Portfolio.types';
 
 
-export const Portfolio: React.FC = () => {
+export const Portfolio: React.FC<PortfolioProps> = (props) => {
   return (
-    <Container>
+    <Container id={props.id}>
       <Title>Portfolio</Title>
       <Subtitle>Check out the projects I have been
         working on and my own projects as well.

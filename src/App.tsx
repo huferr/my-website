@@ -8,7 +8,7 @@ const App: React.FC = function() {
     <>
       <GlobalStyles />
       <Home />
-      <Portfolio />
+      <Portfolio id="Portfolio"/>
     </>
   );
 };
