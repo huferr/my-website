@@ -109,3 +109,12 @@ export const ProjectContent = styled.p`
   margin: 0;
   margin-top: 20px;
 `;
+
+export const ProjectLink = styled.a`
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  margin-top: 20px;
+`;

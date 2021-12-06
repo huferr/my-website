@@ -13,6 +13,7 @@ import {
   ProjectContent,
   ProjectPlatform,
   CarouselWrapper,
+  ProjectLink,
 } from './Portfolio.styles';
 import { PortfolioProps } from './Portfolio.types';
 
@@ -35,6 +36,10 @@ export const Portfolio: React.FC<PortfolioProps> = (props) => {
                   <Projectlanguages>{p.languages}</Projectlanguages>
                   <ProjectPlatform>{p.platform}</ProjectPlatform>
                   <ProjectContent>{p.content}</ProjectContent>
+                  <ProjectLink
+                    href={p.link}
+                    target="_blank"
+                  >See more...</ProjectLink>
                 </Project>
               </Item>
             );
