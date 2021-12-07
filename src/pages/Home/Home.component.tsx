@@ -39,16 +39,16 @@ export const Home: React.FC = () => {
             <Button>Portfolio</Button>
           </Link>
         </ButtonsContainer>
+        <Link to="Portfolio"
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
+          <BouncyDiv>
+            <ArrowDown />
+          </BouncyDiv>
+        </Link>
       </Content>
-      <Link to="Portfolio"
-        spy={true}
-        smooth={true}
-        duration={500}
-      >
-        <BouncyDiv>
-          <ArrowDown />
-        </BouncyDiv>
-      </Link>
     </Container>
   );
 };

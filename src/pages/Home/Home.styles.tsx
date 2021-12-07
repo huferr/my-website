@@ -5,7 +5,7 @@ const bounceAnimation = keyframes`${bounce}`;
 
 export const BouncyDiv = styled.div`
   animation: infinite 2s ${bounceAnimation};
-  margin-top: 20px;
+  margin-top: 100px;
   cursor: pointer;
 `;
 
@@ -21,7 +21,7 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.main`
-  width: 70%;
+  width: 80%;
   height: 80%;
   display: flex;
   flex-direction: column;
@@ -34,6 +34,18 @@ export const Title = styled.h1`
   font-size: 96px;
   font-weight: 300;
   color: #fff;
+
+  @media only screen and (max-width: 1200px) {
+      font-size: 64px;
+  };
+
+  @media only screen and (max-width: 765px) {
+      font-size: 50px;
+  };
+
+  @media only screen and (max-width: 530px) {
+      font-size: 30px;
+  };
 `;
 
 export const Bold = styled.strong`
@@ -48,6 +60,18 @@ export const Subtitle = styled.p`
   font-size: 20px;
   color: #fff;
   text-align: center;
+
+  @media only screen and (max-width: 1200px) {
+      font-size: 15px;
+  };
+
+  @media only screen and (max-width: 765px) {
+      font-size: 13px;
+  };
+
+  @media only screen and (max-width: 425px) {
+      font-size: 12px;
+  };
 `;
 
 export const ButtonsContainer = styled.div`
@@ -56,6 +80,13 @@ export const ButtonsContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  
+  @media only screen and (max-width: 765px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 130px;
+  };
 `;
 
 export const Button = styled.a`
@@ -71,11 +102,16 @@ export const Button = styled.a`
   outline: none;
   text-decoration: none;
   border: none;
-  border-radius: 4px;
+  border-radius: 30px;
   cursor: pointer;
 
   :hover {
     background-color: #dfdede;
     transition: all 0.3s;
   }
+
+  @media only screen and (max-width: 765px) {
+    width: 130px;
+    font-size: 13px;
+  };
 `;
