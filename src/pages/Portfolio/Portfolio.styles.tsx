@@ -81,10 +81,13 @@ export const ProjectTitle = styled.h1`
   margin: 0;
 `;
 
-export const ProjectImg = styled.img`
-  width: 300px;
-  height: 250px;
+export const ProjectVideo = styled.video`
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 350px;
+  height: auto;
   object-fit: contain;
+  box-shadow: #000000 2px 2px 20px 1px; 
 `;
 
 export const Projectlanguages = styled.p`

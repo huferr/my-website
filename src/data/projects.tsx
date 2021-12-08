@@ -1,10 +1,10 @@
-import Mac from '../assets/images/mac.png';
+import spacexVid from '../assets/images/spacexvid.mp4';
 
 export const Projects = [
   {
     id: 1,
     name: 'Math Viewer App',
-    image: Mac,
+    video: '',
     languages: 'React Native, Typescript, Styled-Components',
     platform: 'Android & Ios',
     link: 'https://github.com/huferr/math_viewer',
@@ -12,7 +12,7 @@ export const Projects = [
   {
     id: 2,
     name: 'Capitual App',
-    image: Mac,
+    video: '',
     languages: 'React Native, Typescript, Styled-Components',
     platform: 'Android & Ios',
     content: 'Working on the mobile team of the world’s first hybrid bank app.',
@@ -21,9 +21,10 @@ export const Projects = [
   {
     id: 3,
     name: 'SpaceX Website Emulation',
-    image: Mac,
+    video: spacexVid,
     languages: 'HTML, CSS, Javascript',
     platform: 'Web',
+    content: 'My first project! :)',
     link: 'https://github.com/huferr/spacex-rockets-shop',
   },
 ];

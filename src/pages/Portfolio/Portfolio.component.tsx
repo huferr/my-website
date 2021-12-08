@@ -8,12 +8,12 @@ import {
   Subtitle,
   Project,
   ProjectTitle,
-  ProjectImg,
   Projectlanguages,
   ProjectContent,
   ProjectPlatform,
   CarouselWrapper,
   ProjectLink,
+  ProjectVideo,
 } from './Portfolio.styles';
 import { PortfolioProps } from './Portfolio.types';
 
@@ -32,7 +32,7 @@ export const Portfolio: React.FC<PortfolioProps> = (props) => {
               <Item key={p.id}>
                 <Project>
                   <ProjectTitle>{p.name}</ProjectTitle>
-                  <ProjectImg src={p.image}/>
+                  <ProjectVideo autoPlay muted loop src={p.video}/>
                   <Projectlanguages>{p.languages}</Projectlanguages>
                   <ProjectPlatform>{p.platform}</ProjectPlatform>
                   <ProjectContent>{p.content}</ProjectContent>
