@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
-import { ArrowLeft } from '../../assets/icons/arrow-left';
-import { ArrowRight } from '../../assets/icons/arrow-right';
+import React, {useState} from "react";
+import {ArrowLeft} from "../../assets/icons/arrow-left";
+import {ArrowRight} from "../../assets/icons/arrow-right";
 import {
   CarouselContainer,
   ContentWrapper,
   EmptyBlock,
   Inner, LeftButton,
   RightButton,
-} from './Carousel.styles';
+} from "./Carousel.styles";
 
-export const Carousel: React.FC = ({ children }) => {
-  const [ activeIndex, setActiveIndex ] = useState<number>(0);
+export const Carousel: React.FC = ({children}) => {
+  const [activeIndex, setActiveIndex] = useState<number>(0);
 
   const updateIndex = (newIndex: number) => {
     if (newIndex < 0) newIndex = 0;
@@ -32,9 +32,9 @@ export const Carousel: React.FC = ({ children }) => {
 
       <CarouselContainer>
 
-        <Inner style={{ transform: `translateX(-${activeIndex * 100}%)` }}>
+        <Inner style={{transform: `translateX(-${activeIndex * 100}%)`}}>
           {React.Children.map(children, (child: any, index) => {
-            return React.cloneElement(child, { width: '100%' });
+            return React.cloneElement(child, {width: "100%"});
           })}
         </Inner>
 
