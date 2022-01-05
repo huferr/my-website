@@ -1,6 +1,6 @@
-import React from 'react';
-import { ArrowDown } from '../../assets/icons/arrow-down';
-import { Link } from 'react-scroll';
+import React, {useState} from "react";
+import {ArrowDown} from "../../assets/icons/arrow-down";
+import {Link} from "react-scroll";
 import {
   Container,
   Content,
@@ -10,9 +10,10 @@ import {
   ButtonsContainer,
   Button,
   BouncyDiv,
-} from './Home.styles';
+} from "./Home.styles";
 
 export const Home: React.FC = () => {
+  const [comingSoon, setComingSoon] = useState(false);
   return (
     <Container>
       <Content>
@@ -31,15 +32,20 @@ export const Home: React.FC = () => {
           <Button href="https://github.com/huferr" target="_blank">Github</Button>
           <Button href="https://www.linkedin.com/in/hugo-ferreira-it/" target="_blank">LinkedIn</Button>
 
-          <Link to="Portfolio"
+          {/* <Link to="Portfolio"
             spy={true}
             smooth={true}
             duration={500}
+          > */}
+          <Button
+            onMouseEnter={() => setComingSoon(true)}
+            onMouseLeave={() => setComingSoon(false)}
           >
-            <Button>Portfolio</Button>
-          </Link>
+            {comingSoon ? "Coming Soon" : "Portfolio"}
+          </Button>
+          {/* </Link> */}
         </ButtonsContainer>
-        <Link to="Portfolio"
+        {/* <Link to="Portfolio"
           spy={true}
           smooth={true}
           duration={500}
@@ -47,7 +53,7 @@ export const Home: React.FC = () => {
           <BouncyDiv>
             <ArrowDown />
           </BouncyDiv>
-        </Link>
+        </Link> */}
       </Content>
     </Container>
   );

@@ -1,5 +1,5 @@
-import styled, { keyframes } from 'styled-components';
-import { bounce } from 'react-animations';
+import styled, {keyframes} from "styled-components";
+import {bounce} from "react-animations";
 
 const bounceAnimation = keyframes`${bounce}`;
 

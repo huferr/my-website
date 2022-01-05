@@ -1,7 +1,7 @@
-import React from 'react';
-import { Carousel } from '../../components/Carousel/Carousel.component';
-import { Item } from '../../components/Carousel/Item.component';
-import { Projects } from '../../data/projects';
+import React from "react";
+import {Carousel} from "../../components/Carousel/Carousel.component";
+import {Item} from "../../components/Carousel/Item.component";
+import {Projects} from "../../data/projects";
 import {
   Container,
   Title,
@@ -14,8 +14,8 @@ import {
   CarouselWrapper,
   ProjectLink,
   ProjectVideo,
-} from './Portfolio.styles';
-import { PortfolioProps } from './Portfolio.types';
+} from "./Portfolio.styles";
+import {PortfolioProps} from "./Portfolio.types";
 
 
 export const Portfolio: React.FC<PortfolioProps> = (props) => {
