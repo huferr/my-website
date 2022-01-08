@@ -37,9 +37,10 @@ export const Home: React.FC = () => {
           .
         </Heading>
         <Paragraph>
-          Frontend Engineer, who has a mission to
-          build the best and most useful UX/UI in order
-          to help bring quality, accessibility and knowledge to our world.
+        Frontend engineer who loves what he does and has a mission
+        to build software and applications with the best and most
+        powerful UX / UI, in order to help bring quality,
+        accessibility and knowledge to our world.
         </Paragraph>
         <ButtonsContainer>
           <Button href="https://github.com/huferr" target="_blank">Github</Button>
