@@ -4,30 +4,30 @@ import {Link} from "react-scroll";
 import {
   Container,
   Content,
-  Title,
   Bold,
-  Subtitle,
   ButtonsContainer,
   Button,
-  BouncyDiv,
 } from "./Home.styles";
+import { Heading, Paragraph } from "../../styles";
 
 export const Home: React.FC = () => {
   const [comingSoon, setComingSoon] = useState(false);
+  const [deg, setDeg] = useState();
+
   return (
     <Container>
       <Content>
-        <Title>Hello!</Title>
-        <Title>
+        <Heading>Hello!</Heading>
+        <Heading>
           I am
           <Bold> Hugo Ferreira</Bold>
           .
-        </Title>
-        <Subtitle>
-          Front-end Developer, who has a mission to
+        </Heading>
+        <Paragraph>
+          Frontend Engineer, who has a mission to
           build the best and most useful UX/UI for users in order
           to help bring quality, accessibility and knowledge to our world.
-        </Subtitle>
+        </Paragraph>
         <ButtonsContainer>
           <Button href="https://github.com/huferr" target="_blank">Github</Button>
           <Button href="https://www.linkedin.com/in/hugo-ferreira-it/" target="_blank">LinkedIn</Button>
