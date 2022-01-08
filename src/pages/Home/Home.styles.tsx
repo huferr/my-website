@@ -29,6 +29,8 @@ export const Content = styled.main`
   justify-content: center;
 `;
 
+
+// change to new typography
 export const Title = styled.h1`
   margin: 0px;
   font-size: 96px;
@@ -55,6 +57,8 @@ export const Bold = styled.strong`
   -webkit-text-fill-color: transparent  !important;
 `;
 
+
+// change to paragraph
 export const Subtitle = styled.p`
   margin-top: 30px;
   font-size: 20px;
