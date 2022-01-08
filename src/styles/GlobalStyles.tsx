@@ -18,7 +18,7 @@ export const GlobalStyles = createGlobalStyle`
     }
  
     body::-webkit-scrollbar-thumb {
-    background: linear-gradient(50deg, #53cadf, #fff385, #ff66b0);
+    background: linear-gradient(50deg, #24c574, #7f60ee);
     border-radius: 20px;
     }
 `;

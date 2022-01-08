@@ -29,15 +29,16 @@ export const Content = styled.main`
   justify-content: center;
 `;
 
-export const Bold = styled.strong`
-  background: linear-gradient(50deg, #53cadf, #fff385, #ff66b0);
+export const Bold = styled.strong<{deg: number}>`
+  background: ${(props) =>
+    `linear-gradient(${props.deg}deg, #24c574, #7f60ee)`};
   background-clip: text  !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent  !important;
 `;
 
 export const ButtonsContainer = styled.div`
-  margin-top: 30px;
+  margin-top: 40px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -47,7 +48,7 @@ export const ButtonsContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 130px;
+    height: 150px;
   };
 `;
 
@@ -66,13 +67,14 @@ export const Button = styled.a`
   border: none;
   border-radius: 30px;
   cursor: pointer;
+  outline: none;
 
   :hover {
     background-color: #dfdede;
     transition: all 0.3s;
   }
 
-  @media only screen and (max-width: 765px) {
+  @media only screen and (max-width: 960px) {
     width: 130px;
     font-size: 13px;
   };

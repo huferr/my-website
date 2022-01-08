@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {ArrowDown} from "../../assets/icons/arrow-down";
 import {Link} from "react-scroll";
 import {
@@ -11,8 +11,21 @@ import {
 import { Heading, Paragraph } from "../../styles";
 
 export const Home: React.FC = () => {
-  const [comingSoon, setComingSoon] = useState(false);
-  const [deg, setDeg] = useState();
+  const [comingSoon, setComingSoon] = useState({
+    portfolio: false,
+    article: false,
+  });
+  const [deg, setDeg] = useState(0);
+
+  useEffect(() => {
+    let counter = 0;
+    setInterval(()=>{
+      counter++;
+      if (counter === 360) counter = 0;
+      setDeg(counter);
+    }, 15);
+  }, []);
+
 
   return (
     <Container>
@@ -20,7 +33,7 @@ export const Home: React.FC = () => {
         <Heading>Hello!</Heading>
         <Heading>
           I am
-          <Bold> Hugo Ferreira</Bold>
+          <Bold deg={deg}> Hugo Ferreira</Bold>
           .
         </Heading>
         <Paragraph>
@@ -38,10 +51,28 @@ export const Home: React.FC = () => {
             duration={500}
           > */}
           <Button
-            onMouseEnter={() => setComingSoon(true)}
-            onMouseLeave={() => setComingSoon(false)}
+            onMouseEnter={() => setComingSoon({
+              ...comingSoon,
+              portfolio: true,
+            })}
+            onMouseLeave={() => setComingSoon({
+              ...comingSoon,
+              portfolio: false,
+            })}
           >
-            {comingSoon ? "Coming Soon" : "Portfolio"}
+            {comingSoon.portfolio ? "Coming Soon" : "Portfolio"}
+          </Button>
+          <Button
+            onMouseEnter={() => setComingSoon({
+              ...comingSoon,
+              article: true,
+            })}
+            onMouseLeave={() => setComingSoon({
+              ...comingSoon,
+              article: false,
+            })}
+          >
+            {comingSoon.article ? "Coming Soon" : "Articles"}
           </Button>
           {/* </Link> */}
         </ButtonsContainer>
