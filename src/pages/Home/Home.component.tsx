@@ -11,7 +11,10 @@ import {
 import { Heading, Paragraph } from "../../styles";
 
 export const Home: React.FC = () => {
-  const [comingSoon, setComingSoon] = useState(false);
+  const [comingSoon, setComingSoon] = useState({
+    portfolio: false,
+    article: false,
+  });
   const [deg, setDeg] = useState();
 
   return (
@@ -38,10 +41,28 @@ export const Home: React.FC = () => {
             duration={500}
           > */}
           <Button
-            onMouseEnter={() => setComingSoon(true)}
-            onMouseLeave={() => setComingSoon(false)}
+            onMouseEnter={() => setComingSoon({
+              ...comingSoon,
+              portfolio: true,
+            })}
+            onMouseLeave={() => setComingSoon({
+              ...comingSoon,
+              portfolio: false,
+            })}
           >
-            {comingSoon ? "Coming Soon" : "Portfolio"}
+            {comingSoon.portfolio ? "Coming Soon" : "Portfolio"}
+          </Button>
+          <Button
+            onMouseEnter={() => setComingSoon({
+              ...comingSoon,
+              article: true,
+            })}
+            onMouseLeave={() => setComingSoon({
+              ...comingSoon,
+              article: false,
+            })}
+          >
+            {comingSoon.article ? "Coming Soon" : "Articles"}
           </Button>
           {/* </Link> */}
         </ButtonsContainer>

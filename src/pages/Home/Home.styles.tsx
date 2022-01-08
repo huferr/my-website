@@ -47,7 +47,7 @@ export const ButtonsContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 130px;
+    height: 150px;
   };
 `;
 
@@ -72,7 +72,7 @@ export const Button = styled.a`
     transition: all 0.3s;
   }
 
-  @media only screen and (max-width: 765px) {
+  @media only screen and (max-width: 960px) {
     width: 130px;
     font-size: 13px;
   };
