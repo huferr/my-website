@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {ArrowDown} from "../../assets/icons/arrow-down";
 import {Link} from "react-scroll";
 import {
@@ -15,7 +15,17 @@ export const Home: React.FC = () => {
     portfolio: false,
     article: false,
   });
-  const [deg, setDeg] = useState();
+  const [deg, setDeg] = useState(0);
+
+  useEffect(() => {
+    let counter = 0;
+    setInterval(()=>{
+      counter++;
+      if (counter === 360) counter = 0;
+      setDeg(counter);
+    }, 15);
+  }, []);
+
 
   return (
     <Container>
@@ -23,7 +33,7 @@ export const Home: React.FC = () => {
         <Heading>Hello!</Heading>
         <Heading>
           I am
-          <Bold> Hugo Ferreira</Bold>
+          <Bold deg={deg}> Hugo Ferreira</Bold>
           .
         </Heading>
         <Paragraph>
