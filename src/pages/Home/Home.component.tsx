@@ -25,7 +25,7 @@ export const Home: React.FC = () => {
         </Title>
         <Subtitle>
           Front-end Developer, who has a mission to
-          build the best and most useful UX/UI for users in order
+          build the best and most useful UX/UI in order
           to help bring quality, accessibility and knowledge to our world.
         </Subtitle>
         <ButtonsContainer>
