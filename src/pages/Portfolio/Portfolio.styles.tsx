@@ -19,25 +19,6 @@ export const Content = styled.main`
   justify-content: center;
 `;
 
-export const Title = styled.h1`
-  margin: 0;
-  margin-top: 30px;
-  font-size: 80px;
-  font-weight: 300;
-  color: #fff;
-  background: linear-gradient(50deg, #53cadf, #fff385, #ff66b0);
-  background-clip: text  !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent  !important;
-`;
-
-export const Subtitle = styled.p`
-  margin-top: 30px;
-  font-size: 20px;
-  color: #fff;
-  text-align: center;
-`;
-
 export const ButtonsContainer = styled.div`
   margin-top: 30px;
   width: 100%;

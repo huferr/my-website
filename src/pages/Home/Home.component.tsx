@@ -36,7 +36,7 @@ export const Home: React.FC = () => {
           <Bold deg={deg}> Hugo Ferreira</Bold>
           .
         </Heading>
-        <Paragraph>
+        <Paragraph marginTop={30}>
           Frontend Engineer, who has a mission to
           build the best and most useful UX/UI for users in order
           to help bring quality, accessibility and knowledge to our world.

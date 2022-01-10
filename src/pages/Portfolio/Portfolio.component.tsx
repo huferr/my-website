@@ -2,10 +2,9 @@ import React from "react";
 import {Carousel} from "../../components/Carousel/Carousel.component";
 import {Item} from "../../components/Carousel/Item.component";
 import {Projects} from "../../data/projects";
+import { HeadingSmall, Subtitle } from "../../styles";
 import {
   Container,
-  Title,
-  Subtitle,
   Project,
   ProjectTitle,
   Projectlanguages,
@@ -24,7 +23,7 @@ export interface PortfolioProps {
 export const Portfolio: React.FC<PortfolioProps> = (props) => {
   return (
     <Container id={props.id}>
-      <Title>Portfolio</Title>
+      <HeadingSmall>Portfolio</HeadingSmall>
       <Subtitle>Check out the projects I have been
         working on and my own projects as well.
       </Subtitle>
