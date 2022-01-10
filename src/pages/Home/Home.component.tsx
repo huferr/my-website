@@ -8,7 +8,7 @@ import {
   ButtonsContainer,
   Button,
 } from "./Home.styles";
-import { Heading, Paragraph } from "../../styles";
+import { Heading, Paragraph, Subtitle } from "../../styles";
 
 export const Home: React.FC = () => {
   const [comingSoon, setComingSoon] = useState({
@@ -36,10 +36,12 @@ export const Home: React.FC = () => {
           <Bold deg={deg}> Hugo Ferreira</Bold>
           .
         </Heading>
+
         <Paragraph marginTop={30}>
-          Frontend Engineer, who has a mission to
-          build the best and most useful UX/UI for users in order
-          to help bring quality, accessibility and knowledge to our world.
+        Frontend engineer who loves what he does and has a mission
+        to build software and applications with the best and most
+        powerful UX / UI, in order to help bring quality,
+        accessibility and knowledge to our world.
         </Paragraph>
         <ButtonsContainer>
           <Button href="https://github.com/huferr" target="_blank">Github</Button>
