@@ -15,8 +15,11 @@ import {
   ProjectLink,
   ProjectVideo,
 } from "./Portfolio.styles";
-import {PortfolioProps} from "./Portfolio.types";
 
+// id type to create the scroll animation
+export interface PortfolioProps {
+  id?: string,
+ };
 
 export const Portfolio: React.FC<PortfolioProps> = (props) => {
   return (
