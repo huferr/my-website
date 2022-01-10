@@ -22,8 +22,8 @@ export const Heading = styled.h1<TypographyProps>`
       font-size: 50px;
   };
 
-  @media only screen and (max-width: 530px) {
-      font-size: 30px;
+  @media only screen and (max-width: 560px) {
+      font-size: 35px;
   };
 `;
 

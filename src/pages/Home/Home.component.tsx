@@ -8,7 +8,7 @@ import {
   ButtonsContainer,
   Button,
 } from "./Home.styles";
-import { Heading, Paragraph, Subtitle } from "../../styles";
+import { Heading, Paragraph } from "../../styles";
 
 export const Home: React.FC = () => {
   const [comingSoon, setComingSoon] = useState({
