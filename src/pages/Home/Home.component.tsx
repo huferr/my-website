@@ -38,7 +38,7 @@ export const Home: React.FC = () => {
         </Heading>
 
         <Paragraph marginTop={30}>
-        Frontend engineer who loves what he does and has a mission
+        Software engineer who loves what he does and has a mission
         to build software and applications with the best and most
         powerful UX / UI, in order to help bring quality,
         accessibility and knowledge to our world.
