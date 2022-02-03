@@ -38,10 +38,11 @@ export const Home: React.FC = () => {
         </Heading>
 
         <Paragraph marginTop={30}>
-        Software engineer who loves what he does and has a mission
-        to build software and applications with the best and most
-        powerful UX / UI, in order to help bring quality,
-        accessibility and knowledge to our world.
+          An innovation enthusiast and software engineer who loves
+          what he does and has a mission to build good, maintainable
+          and sustainable software and applications,
+          in order to help bring quality, accessibility
+          and knowledge to the world.
         </Paragraph>
         <ButtonsContainer>
           <Button href="https://github.com/huferr" target="_blank">Github</Button>
